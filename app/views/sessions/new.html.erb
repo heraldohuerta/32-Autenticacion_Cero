@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Acceder a History</h1>
+
+<%= form_with(model: @user, url: sessions_path,local:true) do |form|%>
+
+<%=form.label :email  %><br>
+<%=form.text_field :email  %> <br><br>
+
+<%=form.label :password  %><br>
+<%=form.password_field :password_digest  %><br><br>
+
+<%= form.submit 'Acceder' , class: "btn btn-primary"  %> <br>
+<%end%>

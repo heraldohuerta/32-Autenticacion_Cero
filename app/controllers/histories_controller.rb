@@ -7,6 +7,7 @@ class HistoriesController < ApplicationController
     @histories = History.all
   end
 
+
   # GET /histories/1
   # GET /histories/1.json
   def show
@@ -25,7 +26,7 @@ class HistoriesController < ApplicationController
   # POST /histories.json
   def create
     @history = History.new(history_params)
-
+    @history.user_id = helpers.current_user.id
     respond_to do |format|
       if @history.save
         format.html { redirect_to @history, notice: 'History was successfully created.' }
@@ -64,6 +65,7 @@ class HistoriesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_history
+
       @history = History.find(params[:id])
     end
 
