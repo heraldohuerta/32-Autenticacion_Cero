@@ -112,3 +112,4 @@ Pictory es una aplicación para que diversos usuarios guarden sus historias y pu
 - Crear vista con las historias que le pertenecen al usuario.
 
 - Sube tu proyecto a Github y no olvides compartir el enlace.# 32-Autenticacion_Cero
+# 32-Autenticacion_Cero
